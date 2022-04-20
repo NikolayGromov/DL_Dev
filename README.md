@@ -27,7 +27,7 @@ pip install torch-sparse -f https://data.pyg.org/whl/torch-1.10.1+cpu.html
 pip install torch-geometric
 pip install torch-geometric-temporal
 ```
-4. Склонировать этот репозиторий
+4. Склонировать этот репозиторий, если работа не в Anaconda, то первую команду нужно пропустить
 ```sh
 conda install -c anaconda git
 git clone https://github.com/NikolayGromov/DL_Dev.git
