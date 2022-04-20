@@ -32,10 +32,13 @@ pip install torch-geometric-temporal
 conda install -c anaconda git
 git clone https://github.com/NikolayGromov/DL_Dev.git
 ```
-5. Запустить тесты
+5. Перейти в дирректорию с тестами и запустить их
 ```sh
+cd DL_Dev
 python test.py
 ```
+
+Результат должен быть примерно таким
 ![image](https://github.com/NikolayGromov/DL_Dev/blob/main/test.png)
 
 
