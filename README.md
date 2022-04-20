@@ -17,13 +17,25 @@ conda activate testenv
 2. Установить пакеты PyTorch
 
 ```sh
-conda install pytorch torchvision torchaudio cpuonly -c pytorch
+conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cpuonly -c pytorch
 ```
 3. Установить пакеты PyTorch Geometric Temporal
 
 ```sh
-pip install torch-scatter -f https://data.pyg.org/whl/torch-1.10.0+cpu.html
-pip install torch-sparse -f https://data.pyg.org/whl/torch-1.10.0+cpu.html
+pip install torch-scatter -f https://data.pyg.org/whl/torch-1.10.1+cpu.html
+pip install torch-sparse -f https://data.pyg.org/whl/torch-1.10.1+cpu.html
 pip install torch-geometric
 pip install torch-geometric-temporal
 ```
+4. Склонировать этот репозиторий
+```sh
+conda install -c anaconda git
+git clone https://github.com/NikolayGromov/DL_Dev.git
+```
+5. Запустить тесты
+```sh
+python test.py
+```
+![image](https://github.com/NikolayGromov/DL_Dev/blob/main/test.png)
+
+
