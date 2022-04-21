@@ -6,6 +6,38 @@
 
 Я сделал докер, но проверял его только на wsl, поэтому напишу инструкцию для докера, если не получится, то установим [Miniconda3](https://conda.io/en/latest/miniconda.html)
 
+Если у вас не скачан git или docker, скачайте их:
+```sh
+sudo apt install git
+sudo apt-get install docker docker.io
+```
+или через pip
+
+```sh
+pip install docker
+```
+Теперь опишу, как запустить докер: 
+1. Склонировать этот репозиторий и перейдите в него
+```sh
+git clone https://github.com/NikolayGromov/DL_Dev.git
+cd DL_Dev
+```
+
+2. Собрать докер (все команды с докером нужно выполнять с правами администратора, в Linux, например, нужно добавить ключевое слово *sudo* перед командами)
+
+```sh
+docker build -t test .
+```
+
+4. Запустить докер
+
+```sh
+docker run test
+```
+
+Результат должен быть примерно таким
+![image](https://github.com/NikolayGromov/DL_Dev/blob/main/test.png)
+
 
 *Способ с Miniconda:*
 Прежде всего, желательно иметь установленную [Miniconda3](https://conda.io/en/latest/miniconda.html) или установить ее под вашу операционную систему с версией Python 3.7 (все библиотеки вроде подходят и для версий до 3.9, но я проверял на версии 3.7).
