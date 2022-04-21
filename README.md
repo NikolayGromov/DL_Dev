@@ -6,7 +6,7 @@
 
 Я сделал докер, но проверял его только на wsl, поэтому напишу инструкцию для докера, если не получится, то установим [Miniconda3](https://conda.io/en/latest/miniconda.html)
 
-Если у вас не скачан git или docker, скачайте их:
+Если у вас не скачаны git или docker, скачайте их:
 ```sh
 sudo apt install git
 sudo apt-get install docker docker.io
