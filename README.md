@@ -4,6 +4,10 @@
 
 *Как установить все необходимые пакеты и запустить тесты:*
 
+Я сделал докер, но проверял его только на wsl, поэтому напишу инструкцию для докера, если не получится, то установим [Miniconda3](https://conda.io/en/latest/miniconda.html)
+
+
+*Способ с Miniconda:*
 Прежде всего, желательно иметь установленную [Miniconda3](https://conda.io/en/latest/miniconda.html) или установить ее под вашу операционную систему с версией Python 3.7 (все библиотеки вроде подходят и для версий до 3.9, но я проверял на версии 3.7).
 
 1. Во избежание проблем с несовместимостями версий Python или PyTorch создадим новое окружение
@@ -27,7 +31,7 @@ pip install torch-sparse -f https://data.pyg.org/whl/torch-1.10.1+cpu.html
 pip install torch-geometric
 pip install torch-geometric-temporal
 ```
-4. Склонировать этот репозиторий, если работа не в Anaconda, то первую команду нужно пропустить
+4. Склонировать этот репозиторий
 ```sh
 conda install -c anaconda git
 git clone https://github.com/NikolayGromov/DL_Dev.git
